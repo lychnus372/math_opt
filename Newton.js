@@ -1,6 +1,6 @@
-const Newton = (func_dif, func_sec_dif)=>{
-    let x = 3, x_ = 0;
-    const delta = 0.000001
+const Newton = (func_dif, func_sec_dif, init)=>{
+    let x = init, x_ = 0;
+    const delta = 0.0000001
     do{
         console.log(x);
         x_ = x;
@@ -13,4 +13,4 @@ Newton((x)=>{
 	return 6*x**2-14*x+3;
 },(x)=>{
 	return 12*x-14;
-});
+}, 3);
